@@ -1,95 +1,89 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 	<head>
-		<meta charset="utf-8">
-		<meta name="viewport" content="width=device-width, initial-scale=1">
-		<title>Página de formulário</title>
-		<link rel="stylesheet" type="text/css" href="style.css">
+		<meta charset="UTF-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<title>Formulário</title>
+		<link rel="stylesheet" href="style.css">
 	</head>
-	
 	<body>
-		<div id="capa_formulario">
-			<h1>Página de formulário</h1>
-			<p>Preencha os dados a seguir para continuar!</p>
+		<div id="logo_formulario">
+			<h1>Formulário</h1>
+			<p>Preencha o formulário para proseguir!</p>
 		</div>
 
 		<div id="divisao"></div>
 
-		<div id="area_formulario">
-			
-			<div class="opcao_formulario">
-				<label for="name">Nome Completo:</label>
-				<input class="input_tamanho" type="text" name="nome" id="nome">
-			</div>
-
-			<div class="opcao_formulario">
-				<label for="email">Email:</label>
-				<input class="input_tamanho" type="text" name="email" id="email" placeholder="xxxxxxx@email.com">
-			</div>
-
-			<div class="opcao_formulario">
-				<label for="senha">Senha:</label>
-				<input class="input_tamanho" type="password" name="senha" id="senha" placeholder="*********">
-			</div>
-
-			<div class="opcao_formulario">
-				<label>Sexo:</label>
-				
-				<div class="opcao_radio">
-					<input type="radio" name="contato"><p>Masculino</p>
+		<div id="principal">
+			<form>
+				<div>
+					<label for="nome">Nome:</label>
+					<input type="text" name="nome" id="nome" class="campo_input">
 				</div>
-				
-				<div class="opcao_radio">
-					<input type="radio" name="contato"><p>Feminino</p>
+	
+				<div>
+					<label for="email">Email:</label>
+					<input type="email" name="email" id="email" class="campo_input" placeholder="xxxxxx@email.com">
 				</div>
-				
-				<div class="opcao_radio">
-					<input type="radio" name="contato"><p>Outro</p>
+	
+				<div>
+					<label for="senha">Senha:</label>
+					<input type="password" name="senha" id="senha" class="campo_input" placeholder="***********">
 				</div>
-			</div>
-
-			<div class="opcao_formulario">
-				<label for="data">Data de nascimento:</label>
-				<input class="input_tamanho" type="date" name="nascimento" id="data">
-			</div>
-
-			<div class="opcao_formulario">
-				<label for="telefone">Telefone:</label>
-				<input class="input_tamanho" type="tel" name="telefone" id="telefone" placeholder="(xx)x xxxx-xxxx">
-			</div>
-
-			<div class="opcao_formulario">
-				<label>Escolaridade:</label>
-				<select>
-					<option>Ensino fundamental completo</option>
-					<option>Ensino médio completo</option>
-					<option>Ensino Superior completo</option>
-					<option>Pós-graduado</option>
-				</select>
-			</div>	
-
-			<div class="opcao_formulario">
-				<label>Forma de contato:</label>
-				<div class="opcao_box">
-					<input type="checkbox" name="contato">
-					<p>Email</p>
+	
+				<div>
+					<label for="nascimento">Data de nascimento:</label>
+					<input type="date" name="nascimento" id="nascimento" class="campo_input">
 				</div>
-				
-				<div class="opcao_box">
-					<input type="checkbox" name="contato">
-					<p>Whatsapp</p>
+	
+				<div>
+					<label for="telefone">Telefone:</label>
+					<input type="tel" name="telefone" id="telefone" class="campo_input" placeholder="(xx)x xxxx-xxxx">
 				</div>
-				
-				<div class="opcao_box">
-					<input type="checkbox" name="contato">
-					<p>Telefone</p>
+	
+				<div>
+					<label>Escolaridade:</label>
+					<select>
+						<option>Ensino fundamental completo</option>
+						<option>Ensino médio completo</option>
+						<option>Ensino superior completo</option>
+						<option>Pós-graduado</option>
+					</select>
 				</div>
-				
-			</div>
-
-			<div id="btn_enviar">
-				<input type="submit" value="Enviar">
-			</div>	
+	
+				<div id="sexo_formulario">
+					<label>Sexo:</label>
+					<div class="radio_box_formulario">
+						<input type="radio" name="sexo">
+						<p>Masculino</p>
+					</div>
+					<div  class="radio_box_formulario">
+						<input type="radio" name="sexo">
+						<p>Feminino</p>
+					</div>
+					<div  class="radio_box_formulario">
+						<input type="radio" name="sexo">
+						<p>Outro</p>
+					</div>
+				</div>
+	
+				<div>
+					<label>Forma de contato:</label>
+					<div  class="radio_box_formulario">
+						<input type="checkbox">Whatsapp
+					</div>
+					<div  class="radio_box_formulario">
+						<input type="checkbox">Telefone
+					</div>
+					<div  class="radio_box_formulario">
+						<input type="checkbox">Email
+					</div>
+				</div>
+	
+				<button type="submit">Enviar</button>
+			</form>
 		</div>
+		
 	</body>
 </html>
