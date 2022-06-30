@@ -1,0 +1,72 @@
+*{
+	padding: 0;
+	margin: 0;
+}
+
+body{
+	font: 16px sans-serif;
+	background: #A86EEE;
+	color: #fff;
+}
+
+#capa_formulario{
+	text-align: center;
+}
+
+#capa_formulario h1{
+	padding: 10px 0 5px 0;
+	font-size: 50px;
+}
+
+#capa_formulario p {
+	padding-bottom: 20px;
+	font-size: 20px;
+}
+
+#divisao{
+	border-bottom: 2px solid #fff;
+	margin-bottom:20px;
+}
+
+#area_formulario{
+	width: 540px;
+	font-weight: bold;
+	margin: 10px auto;
+}
+
+#area_formulario label{
+	display: block;
+}
+
+#area_formulario select{
+	width: 560px;
+	padding: 3px;
+}
+
+.input_tamanho{
+	width: 550px;
+	padding: 3px;
+}
+
+.opcao_formulario{
+	margin: 8px;
+}
+
+.opcao_formulario p{
+	display: inline-block;
+}
+
+#btn_enviar input{
+	padding: 10px;
+	width: 300px;
+	border: 2px solid #fff;
+	border-radius: 5px;
+	background: #FF8C00;
+	color: #fff;
+	font-weight: bold;
+	margin: 0 150px;
+}
+
+#btn_enviar input:hover{
+	background: #FFA500;
+}
